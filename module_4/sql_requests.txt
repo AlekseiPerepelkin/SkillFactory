@@ -265,7 +265,7 @@ WHERE a.city not in ('Moscow')
 Задание 5.1.5
 
 SELECT ac.model,
-       count(s.seat_no)
+       count(DISTINCT s.seat_no)
 FROM dst_project.airports a
 JOIN dst_project.flights f ON a.airport_code = f.arrival_airport
 JOIN dst_project.aircrafts ac ON f.aircraft_code = ac.aircraft_code
@@ -276,7 +276,7 @@ LIMIT 1
 
 /*
 Boeing 737-300
-58,890
+130
 */
 
 Финальный запрос!
