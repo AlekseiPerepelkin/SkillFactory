@@ -2,6 +2,8 @@
 # Project -  Car Price prediction
 - **[Kaggle notebook](https://www.kaggle.com/alexeiperepelkin/sf-dst-car-price-prediction-by-aleksei-perepelkin)**
 
+### Команда 火锅_2.0
+
 ### Public score on Kaggle.com - 15.69722
 
 ## Задание
