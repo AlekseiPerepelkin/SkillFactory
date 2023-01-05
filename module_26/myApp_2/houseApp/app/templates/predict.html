@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Страница квартиры - Продажа квартир </title>
+    </head>
+    <body>
+    {% block content %}
+    <h1>Предсказание стоимости квартиры</h1>
+    <form action="" method="post" novalidate>
+        <p>
+            {{ form.city.label }}<br>
+            {{ form.city(size=32) }}
+        </p>
+        <p>
+            {{ form.rooms.label }}<br>
+            {{ form.rooms(size=32) }}
+        </p>
+        <p>
+            {{ form.area.label }}<br>
+            {{ form.area(size=32) }}
+        </p>
+        <p>
+            {{ form.floor.label }}<br>
+            {{ form.floor(size=32) }}
+        </p>
+        <p>{{ form.predict() }}</p>
+    </form>
+    <hr>
+    <p>{{ cost }}</p>
+    {% endblock %}
+    </body>
+</html>

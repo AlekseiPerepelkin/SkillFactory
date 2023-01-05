@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Страница квартиры - Продажа квартир </title>
+    </head>
+    <body>
+        <h1>Объявление: "{{ flat.title }}"!</h1>
+        <p>Город: {{ flat.city }}</p>
+        <p>Количество комнат: {{ flat.rooms }}</p>
+        <p>Площадь: {{ flat.area }}</p>
+        <p>Этаж: {{ flat.floor }}</p>
+        <p>Стоимость: {{ flat.cost }}</p>
+
+        <input type="submit" value="Удалить" onclick="location.href='/delete?id={{flat.id}}'">
+        <input type="submit" value="Редактировать" onclick="location.href='/edit?id={{flat.id}}'">
+        <input type="submit" value="Назад" onclick="location.href='/index'">
+    </body>
+</html>

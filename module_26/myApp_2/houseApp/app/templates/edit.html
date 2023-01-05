@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Страница квартиры - Продажа квартир </title>
+    </head>
+    <body>
+    {% block content %}
+    <h1>Редактирование квартиры</h1>
+    <form action="" method="post" novalidate>
+        <input type="hidden" name="flatId" value={{form.id}}>
+        <p>
+            {{ form.title.label }}<br>
+            {{ form.title(size=32) }}
+        </p>
+        <p>
+            {{ form.city.label }}<br>
+            {{ form.city(size=32) }}
+        </p>
+        <p>
+            {{ form.rooms.label }}<br>
+            {{ form.rooms(size=32) }}
+        </p>
+        <p>
+            {{ form.area.label }}<br>
+            {{ form.area(size=32) }}
+        </p>
+        <p>
+            {{ form.floor.label }}<br>
+            {{ form.floor(size=32) }}
+        </p>
+        <p>
+            {{ form.cost.label }}<br>
+            {{ form.cost(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Prediction page</title>
+    </head>
+    <body>
+    {% block content %}
+    <h1>Cancer prediction</h1>
+    <form action="" method="post" novalidate>
+        <p>
+            {{ form.rm.label }}<br>
+            {{ form.rm(size=16) }}
+        </p>
+        <p>
+            {{ form.tm.label }}<br>
+            {{ form.tm(size=16) }}
+        </p>
+        <p>
+            {{ form.cm.label }}<br>
+            {{ form.cm(size=16) }}
+        </p>
+        <p>
+            {{ form.cnm.label }}<br>
+            {{ form.cnm(size=16) }}
+        </p>
+        <p>
+            {{ form.cpm.label }}<br>
+            {{ form.cpm(size=16) }}
+        </p>
+        <p>
+            {{ form.sm.label }}<br>
+            {{ form.sm(size=16) }}
+        </p>
+        <p>
+            {{ form.ts.label }}<br>
+            {{ form.ts(size=16) }}
+        </p>
+        <p>
+            {{ form.ps.label }}<br>
+            {{ form.ps(size=16) }}
+        </p>
+        <p>
+            {{ form.rw.label }}<br>
+            {{ form.rw(size=16) }}
+        </p>
+        <p>
+            {{ form.tw.label }}<br>
+            {{ form.tw(size=16) }}
+        </p>
+        <p>
+            {{ form.cw.label }}<br>
+            {{ form.cw(size=16) }}
+        </p>
+        <p>
+            {{ form.cpw.label }}<br>
+            {{ form.cpw(size=16) }}
+        </p>
+        <p>
+            {{ form.sw.label }}<br>
+            {{ form.sw(size=16) }}
+        </p>
+        <p>{{ form.predict() }}</p>
+    </form>
+    <hr>
+    <p>{{ diagnosis }}</p>
+    {% endblock %}
+    <input type="submit" value="Назад" onclick="location.href='/index'">
+    </body>
+</html>
